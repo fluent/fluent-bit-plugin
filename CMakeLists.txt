@@ -23,13 +23,10 @@ endif()
 # Info
 message(STATUS "Fluent Bit source code: " ${FLB_SOURCE})
 
-include_directories(${FLB_SOURCE}/include)
-include_directories(${FLB_SOURCE}/lib/monkey/include/)
-include_directories(${FLB_SOURCE}/lib/mbedtls-2.16.1/include/)
-include_directories(${FLB_SOURCE}/lib/flb_libco/)
-include_directories(${FLB_SOURCE}/lib/msgpack-3.2.0/include/)
-include_directories(${FLB_SOURCE}/lib/onigmo)
-include_directories(${FLB_SOURCE}/lib/)
+# Include Headers
+set(FLB_PATH_ROOT_SOURCE ${FLB_SOURCE})
+include(${FLB_SOURCE}/cmake/libraries.cmake)
+include(${FLB_SOURCE}/cmake/headers.cmake)
 
 # Build plugin
 add_subdirectory(${PLUGIN_NAME})
