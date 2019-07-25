@@ -47,3 +47,7 @@ $ ls -l *.so
 ```
 
 that __.so__ file is our dynamic plugin that now can be loaded from Fluent Bit through the [plugins configuration](https://github.com/fluent/fluent-bit/blob/master/conf/plugins.conf) file.
+
+## License
+
+This program is under the terms of the [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0).
