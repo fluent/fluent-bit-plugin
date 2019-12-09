@@ -9,6 +9,9 @@ The following repository provides the structure and build-system helpers to deve
 - [Fluent Bit](https://fluentbit.io) Source code, version >= 1.2
 - C compiler: GCC or Clang
 - CMake3
+- systemd-dev
+- gtest
+- doxygen
 
 ## Getting Started
 
